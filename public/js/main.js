@@ -412,6 +412,14 @@
 		}
 	};
 
+var sendMessage = function(){
+	$('#btn-submit').click(function(e){
+		e.preventDefault();
+
+		alert("Your message has been sent.");
+	});
+}
+
 	var footerAnimate = function() {
 		var footer = $('#fh5co-footer');
 		if ( footer.length > 0 ) {	
@@ -450,6 +458,7 @@
 		windowScroll();
 		navigationSection();
 		testimonialCarousel();
+		sendMessage();
 		
 		// Animations
 		homeAnimate();
